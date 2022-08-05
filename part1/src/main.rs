@@ -17,11 +17,12 @@ fn print_population(adults: u64, kids: u32, buildings: u32) {
     // 💡 TIP: To get a f64 answer here, both numerator and denominator must be f64 values
     let buildings_per_person = 0.0;
 
+    population = adults + f64::from(kids);
     println!("    Population: {}", population);
     println!("        Adults: {}", adults);
     println!("        Kids: {}", kids);
     println!("    Buildings: {}", buildings);
-    println!("    Buildings per person: [👉 TODO print buildings_per_person here]\n");
+    // println!("    Buildings per person: {}", pop_build);
 
     if buildings_per_person >= 1.0 {
         println!("Everyone can have their own building!");
